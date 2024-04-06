@@ -45,7 +45,7 @@
                  &kp F13 &kp LCTRL &kp LALT &mo LEFT_GUI &kp SPACE    &kp RET  &mo RALT  &kp RCTRL &kp PG_UP &kp PG_DN
             >;
 
-            sensor-bindings = <&none &inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_INC &inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
