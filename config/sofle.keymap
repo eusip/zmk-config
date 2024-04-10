@@ -32,17 +32,17 @@
         default_layer {
             display-name = "default";
 // ------------------------------------------------------------------------------------------------------------
-// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  END  |
+// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |  \  |
 // |  ESC  |  Q  |  W  |  F   |  P   |  B   |                   |  J   |  L    |  U    |  Y   |   ;   | BKSPC |
 // |  TAB  |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  D   |  V   |  C_MUTE  |  |       |  K   |  H    |  ,    |  .   |   /   |   \   |
+// | SHIFT |  Z  |  X  |  C   |  D   |  V   |  C_MUTE  |  |       |  K   |  H    |  ,    |  .   |   /   | SHIFT |
 //               | F13 | CTRL | OPT  | CMD  |  SPACE |  | ENTER | CMD  | CTRL  | PGUP  | PGDN |
             bindings = <
-&kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp END
+&kp GRAVE &kp N1 &kp N2   &kp N3   &kp N4    &kp N5                           &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp BSLH
 &kp ESC   &kp Q  &kp W    &kp F    &kp P     &kp B                            &kp J  &kp L     &kp U     &kp Y    &kp SEMI &kp BSPC
 &kp TAB   &kp A  &kp R    &kp S    &kp T     &kp G                            &kp M  &kp N     &kp E     &kp I    &kp O    &kp SQT
-&kp LSHFT &kp Z  &kp X    &kp C    &kp D     &kp V      &bt BT_CLR_ALL &bt BT_CLR_ALL    &kp K  &kp H     &kp COMMA &kp DOT  &kp FSLH &kp BSLH
-                 &kp F13 &kp LCTRL &kp LALT &mo LEFT_GUI &kp SPACE    &kp RET  &mo RALT  &kp RCTRL &kp PG_UP &kp PG_DN
+&kp LSHFT &kp Z  &kp X    &kp C    &kp D     &kp V      &bt BT_CLR_ALL &none    &kp K  &kp H     &kp COMMA &kp DOT  &kp FSLH &kp RSHIFT
+                 &kp F13 &kp LCTRL &kp LALT &kp LEFT_GUI &kp SPACE    &kp RET  &kp RIGHT_GUI  &kp RALT &kp PG_UP &kp PG_DN
             >;
 
             sensor-bindings = <&inc_dec_kp C_BRI_INC C_BRI_INC &inc_dec_kp C_VOL_UP C_VOL_DN>;
